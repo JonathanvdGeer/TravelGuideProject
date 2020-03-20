@@ -1,0 +1,720 @@
+/* Bronnen op GitHub; ReadMe */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+
+/*Navigation bar*/
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #24252A;
+    padding: 5px;
+}
+
+li,
+a {
+    font-family: "montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    text-decoration: none;
+    margin-top: 0px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0px 10px;
+    margin-top: 10px;
+}
+
+nav ul li a {
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: darkseagreen;
+    outline: 2px dotted grey;
+    outline-offset: 5px;
+}
+
+
+/*Logo*/
+body header.navigation img {
+    width: 120px;
+    margin-right: auto;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+body {
+    background-color: coral;
+}
+
+h3 {
+    font-family: "montserrat", sans-serif;
+}
+
+/* Keyframe Backpacker Animate */
+.backpacker {
+    width: 150px;
+    position: absolute;
+    margin-left: -200px;
+    margin-top: -80px;
+    left: 0px;
+    animation-name: tevoorschijn;
+    animation-duration: 2s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+/* KEYFRAMES */
+@keyframes tevoorschijn {
+    from {
+        transform: translateX(0)
+    }
+
+    to {
+        transform: translateX(170px)
+    }
+}
+
+
+/* Welkomst zin Homepage */
+main h1 {
+    font-family: "montserrat", sans-serif;
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Default main paragraaf tekst */
+main p {
+    font-family: "montserrat", sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 0px;
+}
+
+
+/* Container Homepage */
+section.container {
+    max-width: 90vw;
+    margin: 40px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    transition: all ease-in .4s;
+}
+
+section.container article {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+    min-width: 175px;
+    min-height: 175px;
+    max-width: 275px;
+    max-height: 230px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all ease-in .4s;
+}
+
+section.container a {
+    font-family: "montserrat", sans-serif;
+    font-weight: lighter;
+    color: black;
+}
+
+section.container a:hover {
+    color: blue;
+}
+
+section.container img:hover {
+    /*    transform: scale(1.1);*/
+    transform: rotateY(180deg);
+    transition: all ease-in .5s;
+}
+
+
+/*Container Box: Where 2 Go? */
+main section article h3 {
+    margin-top: 5px;
+    margin-bottom: -8px;
+}
+
+section.container img {
+    width: 80px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+section.container article p {
+    margin-top: 10px;
+}
+
+section.container article:nth-child(1n) {
+    background-color: lightskyblue;
+}
+
+
+/*Container Box: ReadMe Prepare  */
+section.container article:nth-child(2n) {
+    background-color: lightcoral;
+}
+
+/*Container Box: Activiteiten  */
+section.container article:nth-child(3n) {
+    background-color: lightsalmon;
+}
+
+/*Container Box: Vervoer and Mapping */
+section.container article:nth-child(4n) {
+    background-color: lightgoldenrodyellow;
+}
+
+/* Einde Container Homepage */
+
+
+/* Begin Review Scroll Homepage */
+.reviewtitel {
+    font-family: "montserrat", sans-serif;
+    font-size: 2rem;
+    color: black;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 80px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.reviewtekst {
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-align: left;
+    margin-top: 3px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+section.containerreview {
+    background-color: coral;
+    display: grid;
+    justify-items: center;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    margin: 20px;
+    grid-gap: 10px;
+    transition: all ease-in .40s;
+}
+
+section.containerreview article {
+    min-width: 350px;
+    height: 360px;
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all ease-in .4s;
+    background-color: aliceblue;
+}
+
+section.containerreview article p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+section.containerreview a {
+    font-family: "montserrat", sans-serif;
+    font-weight: lighter;
+    color: black;
+}
+
+section.containerreview a:hover {
+    color: blue;
+}
+
+section.containerreview img:hover {
+    transform: scale(1.05);
+    transition: all ease-in .3s;
+}
+
+/*Container Review Box: Background-color */
+section.containerreview article {
+    background-color: whitesmoke;
+}
+
+section.containerreview article img {
+    width: 350px;
+    height: 225px;
+    align-items: center;
+}
+
+/* EINDE - Review Scroll Homepage */
+
+
+/* Een reis filmpje */
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-top: 10px;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Einde Reis Section*/
+
+
+/* Where2Go - Gebieden Scroll*/
+.containerbackground2 {
+    background-color: wheat;
+}
+
+.wheretogotitel {
+    font-family: "montserrat", sans-serif;
+    font-size: 2rem;
+    color: black;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.wheretogotekst {
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-align: left;
+    margin-top: 3px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+section.containereuropa a:hover {
+    color: blue;
+}
+
+section.containereuropa img:hover {
+    transform: scale(1.05);
+    transition: all ease-in .3s;
+}
+
+/* BEGIN - Form, Fieldset, Legend, Label Section & Button */
+form {
+    margin-top: 10px;
+    padding: 1rem;
+    line-height: 2.0rem;
+    background: #24252A;
+    color: white;
+    font-family: "montserrat", sans-serif;
+}
+
+fieldset {
+    text-align: center;
+}
+
+form fieldset.firstfieldset div :nth-child(2n) {
+    display: block;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+form fieldset.firstfieldset legend {
+    text-align: center;
+    color: lightcoral;
+}
+
+#datum {
+    width: 125px;
+    margin-left: 5px;
+}
+
+#tijd {
+    margin-left: 5px;
+}
+
+legend {
+    font-family: "montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+form div {
+    position: relative;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+label {
+    font-weight: bolder;
+}
+
+input {
+    font-family: "montserrat", sans-serif;
+    font-size: 0.8rem;
+    border: none;
+    text-align: center;
+}
+
+input:focus,
+input[type="checkbox"]:focus + label,
+form button:focus {
+    outline: 2px dotted grey;
+    outline-offset: 5px;
+}
+
+input[type="text"] {
+    width: 55%;
+    height: 2.0rem;
+}
+
+form button {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+    min-width: 200px;
+    height: 2.5rem;
+    border: none;
+    margin: 0.6rem 0;
+    font-size: 0.9rem;
+    background-color: skyblue;
+    font-weight: bolder;
+}
+
+form button[type="submit"]:hover {
+    color: antiquewhite;
+}
+
+/* Foutmelding */
+.foutmelding {
+    text-align: center;
+    align-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: yellow;
+    color: black;
+    font-weight: bolder;
+    display: none;
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 4em;
+    max-height: 13em;
+    min-width: 250px;
+    max-width: 250px;
+}
+
+.active {
+    display: block;
+    color: black;
+    text-align: center;
+}
+
+/* EINDE - Form, Fieldset, Legend, Label Section & Button */
+
+
+/* BEGIN - Container: Where2Go */
+section.containereuropa article img,
+section.containerazie article img {
+    width: 350px;
+    height: 225px;
+    align-items: center;
+}
+
+/* Section: Where2Go - Europa */
+section.containereuropa {
+    display: grid;
+    justify-items: center;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    margin: 20px;
+    grid-gap: 10px;
+    transition: all ease-in .40s;
+}
+
+section.containereuropa article {
+    min-width: 350px;
+    height: 360px;
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all ease-in .4s;
+    background-color: lightsalmon;
+}
+
+/* Het werkt niet!! */
+/*
+section.containereuropa article:focus {
+    color: darkseagreen;
+    outline: 2px dotted grey;
+    outline-offset: 5px;
+}
+*/
+
+section.containereuropa article p {
+    font-family: "montserrat", sans-serif;
+    font-weight: lighter;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 5px
+}
+
+section.containereuropa a {
+    font-family: "montserrat", sans-serif;
+    font-weight: lighter;
+    color: black;
+}
+
+/* EINDE - Container: Where2Go - Europa */
+
+
+/* BEGIN - Container: Where2Go - Azië */
+section.containerazie a:hover {
+    color: blue;
+}
+
+section.containerazie img:hover {
+    transform: scale(1.05);
+    transition: all ease-in .3s;
+}
+
+section.containerazie {
+    background-color: coral;
+    display: grid;
+    justify-items: center;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    margin: 20px;
+    grid-gap: 10px;
+    transition: all ease-in .40s;
+}
+
+section.containerazie article {
+    font-family: fantasy;
+    min-width: 350px;
+    height: 360px;
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all ease-in .4s;
+    background-color: lightsalmon;
+}
+
+section.containerazie article p {
+    font-family: "montserrat", sans-serif;
+    font-weight: lighter;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 5px
+}
+
+section.containerazie a {
+    font-family: "montserrat", sans-serif;
+    font-weight: lighter;
+    color: black;
+}
+
+/* EINDE - Container: Where2Go - Azië */
+
+
+/* Activiteiten Drop KEYFRAMES */
+.bungeefall {
+    position: absolute;
+    width: 65px;
+    margin-left: 300px;
+    top: -113px;
+    animation: drop 0.6s 0.8 ease forwards;
+    /*    top: 141px;*/
+}
+
+.bungeefall:nth-child(2) {
+    position: absolute;
+    width: 90px;
+    margin-left: 50px;
+    top: -110px;
+    animation: drop 0.7s ease forwards;
+    /*    top: 141px;*/
+}
+
+@keyframes drop {
+    0% {}
+
+    70% {
+        transform: translateY(260px)
+    }
+
+    100% {
+        transform: translateY(251px)
+    }
+}
+
+/* BEGIN - Container Activiteiten */
+section.containeractiviteiten {
+    max-width: 90vw;
+    margin: 40px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    transition: all ease-in .40s;
+}
+
+section.containeractiviteiten article {
+    min-width: 175px;
+    min-height: 320px;
+    max-width: 375px;
+    max-height: 320px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all ease-in .4s;
+}
+
+section.containeractiviteiten article p {
+    font-family: "montserrat", sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+section.containeractiviteiten img:hover {
+    transform: scale(1.3);
+    transition: all ease-in .3s;
+}
+
+/* Container: Activiteitenlijst */
+
+section.containeractiviteiten article img {
+    width: 100px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+
+/* Container Box: Wandeltochten */
+section.containeractiviteiten article:nth-child(1n) {
+    background-color: lightskyblue;
+
+}
+
+/* Container Box: Zipline  */
+section.containeractiviteiten article:nth-child(2n) {
+    background-color: lightcoral;
+}
+
+/* Container Box: Zon, Zee en Strand  */
+section.containeractiviteiten article:nth-child(3n) {
+    background-color: lightsalmon;
+}
+
+/* Container Box: Vaartripjes */
+section.containeractiviteiten article:nth-child(4n) {
+    background-color: lightgoldenrodyellow;
+}
+
+/* Container Box: Festivals, Feestjes */
+section.containeractiviteiten article:nth-child(5n) {
+    background-color: lightskyblue;
+}
+
+/* Container Box: Hiken  */
+section.containeractiviteiten article:nth-child(6n) {
+    background-color: lightcoral;
+}
+
+/* Container Box: Bicycle, Scooter, E-Bike  */
+section.containeractiviteiten article:nth-child(7n) {
+    background-color: lightsalmon;
+}
+
+/* Container Box: Surfen */
+section.containeractiviteiten article:nth-child(8n) {
+    background-color: lightgoldenrodyellow;
+}
+
+/* Container Box: Musuem */
+section.containeractiviteiten article:nth-child(9n) {
+    background-color: lightskyblue;
+}
+
+/* Container Box: Bungeejumpen  */
+section.containeractiviteiten article:nth-child(10n) {
+    background-color: lightcoral;
+}
+
+/* Container Box: Vissen  */
+section.containeractiviteiten article:nth-child(11n) {
+    background-color: lightsalmon;
+}
+
+/* Container Box: Scheuren met een buggy */
+section.containeractiviteiten article:nth-child(12n) {
+    background-color: lightgoldenrodyellow;
+}
+
+/* Container Box: Op dieren rijden */
+section.containeractiviteiten article:nth-child(13n) {
+    background-color: lightskyblue;
+}
+
+/* Container Box: Snorkelen */
+section.containeractiviteiten article:nth-child(14n) {
+    background-color: lightcoral;
+}
+
+/* EINDE - Container Activiteiten */
+
+/* BEGIN - Footer */
+footer {
+    font-family: "montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 30px;
+    color: whitesmoke;
+    background-color: #24252A;
+    margin-top: 100px;
+}
+
+/* EINDE - Footer */
